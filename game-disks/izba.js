@@ -9,21 +9,21 @@ const izbaDemo = {
       desc: `Вы оказались в старой заброшенной избе. На полу разбросаны различные предметы. Введите ITEMS - чтобы осмотреть их.`, // Displayed when the player first enters the room.
       items: [
         {
-          name: 'door',
-          desc: 'It leads NORTH.', // Displayed when the player looks at the item.
+          name: 'Дверь',
+          desc: 'Выход на улицу.', // Displayed when the player looks at the item.
           onUse: () => println(`Type GO NORTH to try the door.`), // Called when the player uses the item.
         },
         {
-          name: ['vines', 'vine'], // The player can refer to this item by either name. The game will use the first name.
-          desc: `They grew over the DOOR, blocking it from being opened.`,
+          name: ['Заросли'], // The player can refer to this item by either name. The game will use the first name.
+          desc: `Прорвались сквозьпол и опутали стол`,
         },
         {
-          name: 'axe',
-          desc: `You could probably USE it to cut the VINES, unblocking the door.`,
+          name: 'Топор',
+          desc: `Для использования топора введите - USE и разрубите заросли.`,
           isTakeable: true, // Allows the player to take the item.
           onUse: () => {
             // Remove the block on the room's only exit.
-            const room = getRoom('start');
+            const room = getRoom('izba');
             const exit = getExit('north', room.exits);
 
             if (exit.block) {
