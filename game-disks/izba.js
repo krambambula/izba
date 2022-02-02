@@ -4,9 +4,9 @@ const izbaDemo = {
   roomId: 'izba', // Set this to the ID of the room you want the player to start in.
   rooms: [
     {
-      id: 'start', // Unique identifier for this room. Entering a room will set the disk's roomId to this.
-      name: 'The First Room', // Displayed each time the player enters the room.
-      desc: `There's a door to the NORTH, but it is overgrown with VINES. Type ITEMS to see a list of items in the room.`, // Displayed when the player first enters the room.
+      id: 'izba', // Unique identifier for this room. Entering a room will set the disk's roomId to this.
+      name: 'Изба', // Displayed each time the player enters the room.
+      desc: `Вы оказались в старой заброшенной избе. На полу разбросаны различные предметы. Введите ITEMS - чтобы осмотреть их.`, // Displayed when the player first enters the room.
       items: [
         {
           name: 'door',
