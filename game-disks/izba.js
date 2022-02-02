@@ -16,7 +16,7 @@ const izbaDemo = {
         {
           name: ['Пиво'], 
           desc: `Прорвались сквозьпол и опутали стол`,
-          isTakeable: true, // Allows the player to take the item.
+          isTakeable: true // Allows the player to take the item.
         },
         {
           name: 'Топор',
