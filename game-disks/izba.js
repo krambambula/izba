@@ -1,7 +1,7 @@
 // This simple game disk can be used as a starting point to create a new adventure.
 // Change anything you want, add new rooms, etc.
-const newDiskTemplate = {
-  roomId: 'start', // Set this to the ID of the room you want the player to start in.
+const izbaDemo = {
+  roomId: 'izba', // Set this to the ID of the room you want the player to start in.
   rooms: [
     {
       id: 'start', // Unique identifier for this room. Entering a room will set the disk's roomId to this.
