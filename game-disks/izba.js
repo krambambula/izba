@@ -14,8 +14,9 @@ const izbaDemo = {
           onUse: () => println(`Type GO NORTH to try the door.`), // Called when the player uses the item.
         },
         {
-          name: ['Заросли'], // The player can refer to this item by either name. The game will use the first name.
+          name: ['Пиво'], 
           desc: `Прорвались сквозьпол и опутали стол`,
+          isTakeable: true, // Allows the player to take the item.
         },
         {
           name: 'Топор',
