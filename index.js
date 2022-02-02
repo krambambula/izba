@@ -414,7 +414,7 @@ let takeItem = (itemName) => {
       if (typeof item.onTake === 'function') {
         item.onTake({disk, println, room, getRoom, enterRoom, item});
       } else {
-        println(`You took the ${getName(item.name)}.`);
+        println(`Вы взяли ${getName(item.name)}.`);
       }
     } else {
       if (typeof item.onTake === 'function') {
@@ -432,6 +432,8 @@ let takeItem = (itemName) => {
     }
   }
 };
+
+let take = 'взять';
 
 // list useable items in room and inventory
 let use = () => {
